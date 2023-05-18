@@ -12,12 +12,12 @@
 </head>
 <body>
     <main>
-        <h1 class="text-center"> Calcola il prezzo del tuo biglietto</h1>
 
+        <h1 class="text-center mt-5"> Calcola il prezzo del tuo biglietto</h1>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="card p-4" style="width: 100%;">
+                    <div class="card p-4 mb-5" style="width: 100%;">
                         <!-- FORM - Inserimenro input -->
                         <form class="d-flex justify-content-evenly">
                             <!-- Input Nome cognome -->
@@ -53,16 +53,39 @@
             
         </div>
         
+
+        <h1 class="text-center"> Il tuo biglietto</h1>
         <div class="container">
             <div class="row">
-               
                 <div class="col">
-                    <!-- RISULTATO  -->
-                    <span>Nome cognome</span> 
-                    <span id="nomeCognomeDef"></span><br/>
-                    <span for="">Risultato</span>
-                    <span id="risultato"></span>
-
+                    <h4>Dettaglio passeggeri</h4>
+                    <div class="">
+                        <!-- RISULTATO  -->
+                        <div>Nome passeggero:</div> 
+                        <span id="nomeCognomeDef"></span><br/>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Offerta</th>
+                                <th scope="col">Carrozza</th>
+                                <th scope="col">Codice CP</th>
+                                <th scope="col">Costo biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="offerta"></span> </td>
+                                <td><span id="numeroCarrozza"></span> </td>
+                                <td><span id="codiceCp"></span> </td>
+                                <td > <span id="risultato"></span> </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                    
                 </div>
     
             </div>
