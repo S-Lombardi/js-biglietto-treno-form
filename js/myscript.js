@@ -1,8 +1,8 @@
 
-let pulsante = document.getElementById('pulsante');
+let pulsanteGenera = document.getElementById('genera');
 
 
-pulsante.addEventListener('click', function() { 
+pulsanteGenera.addEventListener('click', function() { 
     //input km e anni utente
     let km_utente = document.getElementById("km").value;
     let anni_utente = document.getElementById("eta").value;
@@ -18,21 +18,21 @@ pulsante.addEventListener('click', function() {
     
     //CONDIZIONE
     //SCONTO MINORENNI
-    if (anni_utente < 18) {
+    if (anni_utente == 2 ) {
 
         scontoDaApplicare = 0.20;
         console.log("sconto del 20%: " + scontoDaApplicare);
 
     }
     //SCONTO OVER 65
-    else if (anni_utente >= 65) {
+    else if (anni_utente == 3) {
 
         scontoDaApplicare = 0.40;
         console.log("sconto del 40%: " + scontoDaApplicare);
 
     }
     //SCONTO A 0
-    else {//if(anni_utente >=18 || anni_utente <= 65) {
+    else {
 
         scontoDaApplicare = 0;
         console.log("sconto 0%: " + scontoDaApplicare);
@@ -46,7 +46,7 @@ pulsante.addEventListener('click', function() {
     console.log("prezzo finale: " + prezzo_finale_fixed);
 
     //RISULTATO A VIDEO
-    let input = document.getElementById("risultato").innerHTML = prezzo_finale_fixed;
-
-});
+    document.getElementById("risultato").innerHTML = prezzo_finale_fixed;
+    document.getElementById("nomeCognomeDef").innerHTML = document.getElementById("nomecognome").value;
+}); 
 
