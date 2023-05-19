@@ -19,13 +19,13 @@ pulsanteGenera.addEventListener('click', function() {
 
     //CONDIZIONE
     //SCONTO MINORENNI
-    if (anni_utente === 2 ) {
+    if (anni_utente === "2" ) {
         nomeBiglietto = "Biglietto minori";       
         scontoDaApplicare = 0.20;
         console.log("sconto del 20%: " + scontoDaApplicare);
     }
     //SCONTO OVER 65
-    else if (anni_utente === 3) {
+    else if (anni_utente === "3") {
         nomeBiglietto = "Biglietto over 65";
         scontoDaApplicare = 0.40;
         console.log("sconto del 40%: " + scontoDaApplicare);
