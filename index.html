@@ -18,12 +18,12 @@
 <body>
     <main>
 
-        <h1 class="text-center mt-5"> Calcola il prezzo del tuo biglietto</h1>
+        <h1 class="text-center mt-5 text-white"> Calcola il prezzo del tuo biglietto</h1>
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="card p-4 mb-5" style="width: 100%;">
-                        <!-- FORM - Inserimenro input -->
+                        <!-- FORM - Inserimento input -->
                         <form class="d-flex justify-content-evenly">
                             <!-- Input Nome cognome -->
                             <div class="mb-3">
@@ -39,10 +39,10 @@
                             <div class="mb-3">
                                 <label for="eta" class="form-label">Fascia d'età</label>
                                 <select class="form-select" id="eta" aria-label="Default select example">
+                                    <option value="0" selected hidden>Seleziona</option>
                                     <option value="1">Maggiorenne</option>
                                     <option value="2">Minorenne</option>
                                     <option value="3">Over 65</option>
-
                                 </select>
                             </div>
                         </form>
